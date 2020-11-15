@@ -3,6 +3,17 @@
 #ifndef DRIVER_ADC_H_
 #define DRIVER_ADC_H_
 
+//voltage reference
+#define AREF 1
+//#define AVCC 1
+//#define INTRN 1
+//..................
+
+//resutl justification
+#define RITJUST 1
+//#define LFTJUST 1
+//..................
+
 #define ADC0 0
 #define ADC1 1
 #define ADC2 2

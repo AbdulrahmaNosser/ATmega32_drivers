@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/cores/MightyCore",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/variants/standard",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/AVR_examples/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/EEPROM/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Ethernet/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Optiboot_flasher/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SD/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SPI/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SPI1/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Servo/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SoftwareSerial/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Timer/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Wire/src",
+                "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Wire1/src",
+                "C:/Users/auhn2/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/cores/MightyCore",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/variants/standard",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/AVR_examples/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/EEPROM/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Ethernet/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Optiboot_flasher/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SD/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SPI/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SPI1/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Servo/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/SoftwareSerial/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Timer/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Wire/src",
+                    "C:/Users/auhn2/.platformio/packages/framework-arduino-avr-mightycore/libraries/Wire1/src",
+                    "C:/Users/auhn2/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50003",
+                "ARDUINO_AVR_ATmega32",
+                "F_CPU=8000000",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega32__",
+                ""
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/auhn2/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega32",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

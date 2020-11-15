@@ -1,8 +1,30 @@
 #include <avr/io.h>
+#include "ADC_driver.h"
 #include "STD_Types.h"
 
 void ADC_init(void)
 {
+#ifdef AREF
+    ADMUX &= ~((1 << REFS0) | (1 << REFS1));
+
+#elif AVCC
+    ADMUX |= (1 << REFS0);
+    ADMUX &= ~(1 << REFS1);
+
+#elif INTRN
+    ADMUX |= (1 << REFS0) | (1 << REFS1);
+
+#endif
+
+//resutl justification
+#ifdef RITJUST
+    ADMUX &= ~(1 << ADLAR);
+
+#elif LFTJUST
+    ADMUX |= (1 << ADLAR);
+
+#endif
+
     ADCSRA |= (1 << ADEN); //ADC enable
 }
 
