@@ -9,10 +9,20 @@
 //#define INTRN 1
 //..................
 
-//resutl justification
+//result justification
 #define RITJUST 1
 //#define LFTJUST 1
 //..................
+
+//Auto Trigger Enable
+//External Interrupt Request 0
+//#define ADC_AUTO 1
+
+//ADC Interrupt Enable
+//#define ADC_INT
+
+//ADC Prescaler 2,4,8,16,32,64,128
+#define ADC_scale 2
 
 #define ADC0 0
 #define ADC1 1
