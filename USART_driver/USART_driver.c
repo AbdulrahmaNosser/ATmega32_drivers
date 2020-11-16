@@ -69,7 +69,7 @@ void USART_init(long BaudRate)
     #endif
 //_________________________________
 //baud rate setting
-    long BD_Rate_calc;
+    unsigned int BD_Rate_calc;
 
 //baud calculation
     #if SYNC_MODE
@@ -89,7 +89,7 @@ void USART_init(long BaudRate)
     UBRRL = BD_Rate_calc;
     UBRRH &= ~(1<<URSEL);    //UBRRH select
     UBRRH &= ~(0x0F);
-    UBRRH |= BD_Rate_calc * 0x0F;
+    UBRRH |= (BD_Rate_calc>>8) * 0x0F;
 //_________________________________
 
     UCSRB |= (1<<RXEN)|(1<<TXEN);     //Receiver & Transmitter Enable 

@@ -8,7 +8,7 @@ int main(void)
     DDRC = 0xff;
 
     USART_init(9600UL);
-    USART_send_string("Enter O or F for ON & OFF");
+    USART_send_string("Enter O or F for ON & OFF\n\r");
 
     while (1) 
     {
@@ -16,13 +16,13 @@ int main(void)
         if (data == 'O')
         {
             PORTC |= (1<<PC0);
-            USART_send_string("ON");
+            USART_send_string("ON\n\r");
         }
         
         else if (data == 'F')
         {
             PORTC &= ~(1<<PC0);
-            USART_send_string("OFF");
+            USART_send_string("OFF\n\r");
         }
         
     }
