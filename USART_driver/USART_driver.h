@@ -1,5 +1,6 @@
 #ifndef USART_DRIVER_
 #define USART_DRIVER_
+
 #define F_CPU 8000000UL
 #define DOUBLE_SPEED 0
 #define MULTI_PRC_COM 0
