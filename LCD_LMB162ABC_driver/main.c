@@ -4,7 +4,7 @@
 int main(void)
 {
 	LCD_init();
-	LCD_cursor_location(1, 3);
+	LCD_cursor_location(1, 7);
 	LCD_send_char('a');
     while (1) 
     {

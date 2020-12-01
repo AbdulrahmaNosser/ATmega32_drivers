@@ -6,7 +6,10 @@
 
 
 #define BIT_MODE (8)  //4 | 8 Bit mode
-#define LINES_NUMBER (2)  //
+#if BIT_MODE == 4
+    #define NIBBLE_SELECT 'H'   //'L' | 'H' for low | high nibble
+#endif
+#define LINES_NUMBER (2)  // 1, 2
 
 #define LCD_DDR DDRC
 #define LCD_REG PORTC
@@ -26,10 +29,23 @@
 #define RS PIN0
 #define E  PIN1
 
+#if BIT_MODE == 8
+    #if LINES_NUMBER == 2
+        #define FUNCTION_SET   (0X38)
+    #elif LINES_NUMBER == 1
+        #define FUNCTION_SET   (0X30)
+    #endif
+    
+#elif BIT_MODE == 4
+    #if LINES_NUMBER == 2
+        #define FUNCTION_SET   (0X28)
+    #elif LINES_NUMBER == 1
+        #define FUNCTION_SET   (0X20)
+    #endif
+#endif
 
 #define CLEAR_DISPLAY  (0X01)
 #define RETURN_HOME    (0X02)
-#define FUNCTION_SET   (0X38)
 #define CGRAM_ADDRESS  (0x40)
 #define DDRAM_ADDRESS  (0x80)
 #define DIS_ON_CRS_ON_BLNK_ON    (0X0F)
@@ -42,5 +58,7 @@ extern void LCD_command(char cmd);
 extern void LCD_send_char(char byte);
 extern void LCD_send_string(char *string);
 extern void LCD_cursor_location(char row, char col);
+extern void low_bit(char byte, char mode);
+extern void high_bit(char byte, char mode);
 
 #endif
