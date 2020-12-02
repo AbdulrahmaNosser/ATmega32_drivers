@@ -50,3 +50,16 @@ LCD_LMB162ABC_driver/Debug/main.o
 LCD_LMB162ABC_driver/Debug/makedep.mk
 LCD_LMB162ABC_driver/Debug/Makefile
 simulation/ATmega32_LCD_sim.pdsprj.DESKTOP-S254NA7.auhn2.workspace
+Timer_driver/Debug/main.d
+Timer_driver/Debug/main.o
+Timer_driver/Debug/makedep.mk
+Timer_driver/Debug/Makefile
+Timer_driver/Debug/Timer_driver.d
+Timer_driver/Debug/Timer_driver.eep
+Timer_driver/Debug/Timer_driver.elf
+Timer_driver/Debug/Timer_driver.hex
+Timer_driver/Debug/Timer_driver.lss
+Timer_driver/Debug/Timer_driver.map
+Timer_driver/Debug/Timer_driver.o
+Timer_driver/Debug/Timer_driver.srec
+simulation/Last Loaded ATmega32_LCD_sim.pdsbak

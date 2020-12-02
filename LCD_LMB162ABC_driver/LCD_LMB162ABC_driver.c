@@ -19,7 +19,6 @@ void LCD_init(void)
         #elif NIBBLE_SELECT == 'H'
             LCD_DDR |= 0xF0;
         #endif
-
     #endif
 
     LCD_CTR_DDR |= ((1<<RS) | (1<<E));
@@ -88,14 +87,17 @@ extern void LCD_cursor_location(char row, char col)
     switch (row)
     {
     case 0: address = (col & 0x7f);break;
+
     #if LINES_NUMBER > 1
-    case 1: address = (0x40 + (col & 0x7f));break;
+        case 1: address = (0x40 + (col & 0x7f));break;
     #endif
+
     #if LINES_NUMBER > 2
-    case 2: address = (0x10 + (col & 0x7f));break;
+        case 2: address = (0x10 + (col & 0x7f));break;
     #endif
+
     #if LINES_NUMBER > 3
-    case 3: address = (0x50 + (col & 0x7f));break;
+        case 3: address = (0x50 + (col & 0x7f));break;
     #endif
     }
 
