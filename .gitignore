@@ -63,3 +63,21 @@ Timer_driver/Debug/Timer_driver.map
 Timer_driver/Debug/Timer_driver.o
 Timer_driver/Debug/Timer_driver.srec
 simulation/Last Loaded ATmega32_LCD_sim.pdsbak
+PWM_driver/.vs/PWM_driver/v14/.atsuo
+PWM_driver/PWM_driver.atsln
+PWM_driver/PWM_driver.componentinfo.xml
+PWM_driver/PWM_driver.cproj
+test.c
+test.exe
+PWM_driver/Debug/main.d
+PWM_driver/Debug/main.o
+PWM_driver/Debug/makedep.mk
+PWM_driver/Debug/Makefile
+PWM_driver/Debug/PWM_driver.d
+PWM_driver/Debug/PWM_driver.eep
+PWM_driver/Debug/PWM_driver.elf
+PWM_driver/Debug/PWM_driver.hex
+PWM_driver/Debug/PWM_driver.lss
+PWM_driver/Debug/PWM_driver.map
+PWM_driver/Debug/PWM_driver.o
+PWM_driver/Debug/PWM_driver.srec
